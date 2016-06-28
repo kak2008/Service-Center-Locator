@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="soe-aE-WkT">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dealershipCell" rowHeight="100" id="hvc-NN-0IM" customClass="DealershipTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hvc-NN-0IM" id="JsB-ev-W3n">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleIcon.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aut-p5-YNM">
+                                                    <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="84" id="JaK-t0-pFC"/>
+                                                        <constraint firstAttribute="width" constant="84" id="cLx-Jq-yDA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-dy-gvD">
+                                                    <rect key="frame" x="100" y="8" width="492" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSd-t4-a9T">
+                                                    <rect key="frame" x="100" y="37" width="492" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHA-c9-BNE">
+                                                    <rect key="frame" x="100" y="70.5" width="492" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="QHA-c9-BNE" secondAttribute="bottom" constant="8" id="11c-hj-F7x"/>
+                                                <constraint firstItem="OSd-t4-a9T" firstAttribute="leading" secondItem="aut-p5-YNM" secondAttribute="trailing" constant="8" id="8Fh-0V-gMF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Zyq-dy-gvD" secondAttribute="trailing" constant="8" id="BEN-ie-lu8"/>
+                                                <constraint firstItem="Zyq-dy-gvD" firstAttribute="leading" secondItem="aut-p5-YNM" secondAttribute="trailing" constant="8" id="BQn-Fi-Gpx"/>
+                                                <constraint firstItem="QHA-c9-BNE" firstAttribute="leading" secondItem="aut-p5-YNM" secondAttribute="trailing" constant="8" id="DQN-hI-aJ0"/>
+                                                <constraint firstItem="OSd-t4-a9T" firstAttribute="top" secondItem="Zyq-dy-gvD" secondAttribute="bottom" constant="8" id="QP1-ze-wwK"/>
+                                                <constraint firstItem="aut-p5-YNM" firstAttribute="centerY" secondItem="JsB-ev-W3n" secondAttribute="centerY" id="SiM-9G-PxC"/>
+                                                <constraint firstAttribute="trailing" secondItem="QHA-c9-BNE" secondAttribute="trailing" constant="8" id="Ti3-N2-Rbe"/>
+                                                <constraint firstItem="aut-p5-YNM" firstAttribute="leading" secondItem="JsB-ev-W3n" secondAttribute="leading" constant="8" id="eCV-TA-5fc"/>
+                                                <constraint firstItem="Zyq-dy-gvD" firstAttribute="top" secondItem="JsB-ev-W3n" secondAttribute="top" constant="8" id="erR-Ic-DKt"/>
+                                                <constraint firstItem="QHA-c9-BNE" firstAttribute="top" secondItem="OSd-t4-a9T" secondAttribute="bottom" constant="12.5" id="fhN-CL-tGX"/>
+                                                <constraint firstAttribute="trailing" secondItem="OSd-t4-a9T" secondAttribute="trailing" constant="8" id="yO4-WQ-AQc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dealershipAddressLabel" destination="OSd-t4-a9T" id="zoh-Da-n5S"/>
+                                            <outlet property="dealershipDistanceLabel" destination="QHA-c9-BNE" id="jjx-EF-ZkB"/>
+                                            <outlet property="dealershipImageView" destination="aut-p5-YNM" id="Ypq-Bk-Okj"/>
+                                            <outlet property="delearshipNameLabel" destination="Zyq-dy-gvD" id="XL9-ut-ald"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHd-fy-KoW">
+                                <rect key="frame" x="0.0" y="120" width="600" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HHd-fy-KoW" secondAttribute="trailing" id="1A7-c0-rUb"/>
+                            <constraint firstItem="HHd-fy-KoW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="65y-BR-E1p"/>
+                            <constraint firstItem="soe-aE-WkT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Jf-kb-ylO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="soe-aE-WkT" secondAttribute="bottom" id="7aY-Ma-Fdz"/>
+                            <constraint firstItem="HHd-fy-KoW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9AS-80-8CJ"/>
+                            <constraint firstAttribute="trailing" secondItem="soe-aE-WkT" secondAttribute="trailing" id="fNf-Gg-Asc"/>
+                            <constraint firstItem="soe-aE-WkT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fsh-ln-W52"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qzT-96-8ck"/>
+                    <connections>
+                        <outlet property="dealershipTableView" destination="soe-aE-WkT" id="oM5-Db-KTX"/>
+                        <outlet property="errorLabel" destination="HHd-fy-KoW" id="ZEa-mO-p8c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="590"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sampleIcon.jpeg" width="76" height="76"/>
+    </resources>
+</document>
