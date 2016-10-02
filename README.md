@@ -1,5 +1,8 @@
 # Service-Center-Locator
 
+### Installation
+In order to run this app. Download the repository, open it on XCode, build & run.
+
 ### Requirements
 
 * Xcode 7.3
