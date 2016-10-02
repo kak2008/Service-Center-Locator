@@ -1,7 +1,13 @@
 # Service-Center-Locator
+This app is 
 
 ### Installation
+
 In order to run this app. Download the repository, open it on XCode, build & run.
+
+### Screenshots
+
+![alt tag](https://github.com/kak2008/Service-Center-Locator/blob/master/Screen%20Shots/Simulator%20Screen%20Shot%20May%2012%2C%202016%2C%201.45.01%20PM.png)
 
 ### Requirements
 
