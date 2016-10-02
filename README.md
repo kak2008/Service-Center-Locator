@@ -1,5 +1,6 @@
 # Service-Center-Locator
-This app is 
+
+This app aims to locate the nearest store that is available to the user from their current location.
 
 ### Installation
 
