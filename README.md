@@ -1,6 +1,8 @@
 # Service-Center-Locator
 
-This app aims to locate the nearest store that is available to the user from their current location.
+This app aims to locate the nearest store that is available to the user from their current location. Used Core Location API in order to track down users location. 
+
+Invoked Web Service using NSURL Sessions and Parsed JSON responses using NSJSON Serialization.
 
 ### Installation
 
