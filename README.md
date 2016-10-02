@@ -8,7 +8,7 @@ Invoked Web Service using NSURL Sessions and Parsed JSON responses using NSJSON 
 
 In order to run this app. Download the repository, open it on XCode, build & run.
 
-Download the 
+Download the "dealers.php" file and run using mamp server for the webservice response.
 
 ### Screenshots
 
