@@ -17,7 +17,7 @@ Download the "dealers.php" file and run using mamp server for the webservice res
 ### Requirements
 
 * Xcode 7.3
-* Swift 2.0
+* Objective - C
 
 ### License
 
